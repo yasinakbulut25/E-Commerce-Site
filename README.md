@@ -1,4 +1,4 @@
-# E-Commerce Web Site With React Using Conext and Fetch API
+# E-Commerce Web Site With React Using Context and Fetch API
 
 In this project, I developed an E-Commerce site using React (Context, Hooks) and HTML&CSS. I pulled product and category data from dummyjson site using Fetch API. I used React-Router-Dom for pagination.
 
