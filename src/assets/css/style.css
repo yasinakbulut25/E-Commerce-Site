@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --first-color: #3ac7a5;
+
+  --light-color: #fff;
+  --dark-color: #343434;
+  --gray-color-75: #dadee7;
+  --gray-color-100: #b5bcc5;
+  --gray-color-200: #949fae;
+
+  --main-bg: #fff;
+  --light-bg: #f3f4f7;
+  --opacity-bg: rgba(133, 232, 209, 0.239);
+
+  --header-height: 4.5rem;
+
+  --font: "Montserrat", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--main-bg);
+  font-family: var(--font);
+}
+body.dark-mode {
+  --first-color: #3ac7a5;
+
+  --light-color: #000;
+  --dark-color: #f6f2f2;
+  --gray-color-75: #2d384b;
+  --gray-color-100: #879cc2;
+  --gray-color-200: #566683;
+
+  --main-bg: #111827;
+  --light-bg: #172031;
+  --opacity-bg: #1d383f;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-snap-stop: var(--header-height);
+  font-size: 16px;
+}
+.main-section {
+  position: relative;
+  padding-top: calc(var(--header-height) + 1.5rem);
+}
+.section {
+  padding: 2.5rem 0;
+}
+.section-title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--dark-color);
+}
+.container {
+  position: relative;
+  width: 1320px;
+  margin: auto;
+  padding: 0 1rem;
+}
+@media screen and (max-width: 1400px) {
+  .container {
+    width: 1140px;
+  }
+}
+@media screen and (max-width: 1500px) {
+  .container {
+    width: 1140px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 960px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .container {
+    width: 100%;
+  }
+}
+a {
+  text-decoration: none;
+}
+
+.banner-img {
+  position: relative;
+  background: transparent;
+  overflow: hidden;
+  width: 100%;
+  margin: 1.5rem 0;
+}
+.banner-img img {
+  width: 100%;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
+.footer {
+  padding: 2rem 0 3rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--gray-color-200);
+}
+.footer a {
+  padding-left: 0.35rem;
+  color: var(--first-color);
+}
+@media screen and (max-width: 992px) {
+  .banner-img {
+    margin: 0;
+  }
+  .section-title {
+    font-size: 1.25rem;
+  }
+}

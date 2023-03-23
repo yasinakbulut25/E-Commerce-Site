@@ -1,0 +1,82 @@
+.contact-area {
+  position: relative;
+  display: grid;
+  place-items: center;
+  gap: 1rem;
+}
+.contact-form {
+  position: relative;
+  width: 60%;
+  text-align: center;
+}
+.input-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+.input-box {
+  margin: 0.75rem 0;
+}
+.input-box label {
+  color: var(--first-color);
+  text-align: left;
+  font-size: 0.9rem;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.input-box input,
+.input-box textarea {
+  font-family: var(--font);
+  border: 1px solid var(--gray-color-75);
+  background-color: transparent;
+  color: var(--dark-color);
+  padding: 1rem 0.75rem;
+  border-radius: 0.25rem;
+  width: 100%;
+  transition: all 0.25s;
+  outline: none;
+  resize: none;
+}
+.input-box input::placeholder,
+.input-box textarea::placeholder {
+  color: var(--gray-color-200);
+}
+.input-box input:focus,
+.input-box input:valid,
+.input-box textarea:focus,
+.input-box textarea:valid {
+  border-color: var(--first-color);
+}
+.send-btn {
+  width: max-content;
+  padding: 1rem 1.5rem;
+  margin: 0.75rem 0;
+  border-radius: 0.5rem;
+  background-color: var(--first-color);
+  color: #fff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.send-btn i {
+  padding-left: 0.25rem;
+}
+@media screen and (max-width: 850px) {
+  .contact-area {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .contact-image {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contact-form {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .input-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
