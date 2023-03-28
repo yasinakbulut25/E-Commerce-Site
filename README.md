@@ -14,7 +14,7 @@ Project content;
 
 # Live Demo
 
-You can click [here](https://yasin-shopping.netlify.app) to test the site live.
+You can click [here](https://shopping.yasinakbulut.com) to test the site live.
 
 # Project Screenshots
 
